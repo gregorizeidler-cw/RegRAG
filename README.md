@@ -153,6 +153,34 @@ Once the vector database is populated, the RAG system handles user queries throu
 
 *Document analysis process showing topic extraction, requirement mapping, and timeline analysis*
 
+```mermaid
+graph TD
+    A[Document Analysis] --> B[Topic Extraction]
+    A --> C[Requirement Mapping]
+    A --> D[Cross-Reference Analysis]
+    A --> E[Timeline Analysis]
+    
+    B --> F[Common Topics]
+    B --> G[Topic Relevance]
+    
+    C --> H[BR Requirements]
+    C --> I[US Requirements]
+    C --> J[EU Requirements]
+    
+    D --> K[Related Sections]
+    D --> L[Common Patterns]
+    
+    E --> M[Pre-2015]
+    E --> N[2015-2018]
+    E --> O[Post-2018]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333
+    style C fill:#bbf,stroke:#333
+    style D fill:#bbf,stroke:#333
+    style E fill:#bbf,stroke:#333
+```
+
 ### 2. 🎯 Structured Response Generation
 - **Multi-jurisdictional Analysis**: Compares requirements across jurisdictions
 - **Source Attribution**: Detailed citation of regulatory sources
@@ -162,6 +190,36 @@ Once the vector database is populated, the RAG system handles user queries throu
 ![Response Generation](assets/response_generation_workflow.png)
 
 *Structured response generation showing analysis components and source attribution*
+
+```mermaid
+graph TD
+    A[Structured Response] --> B[Direct Answer]
+    A --> C[Jurisdiction Analysis]
+    A --> D[Cross-Jurisdiction]
+    A --> E[Source Citations]
+    
+    B --> F[Summary]
+    B --> G[Key Points]
+    B --> H[Relevance Score]
+    
+    C --> I[BR Requirements]
+    C --> J[US Requirements]
+    C --> K[EU Requirements]
+    
+    D --> L[Similarities]
+    D --> M[Differences]
+    D --> N[Unique Aspects]
+    
+    E --> O[Document Links]
+    E --> P[Confidence Score]
+    E --> Q[Context Excerpts]
+    
+    style A fill:#f96,stroke:#333,stroke-width:2px
+    style B fill:#9cf,stroke:#333
+    style C fill:#9cf,stroke:#333
+    style D fill:#9cf,stroke:#333
+    style E fill:#9cf,stroke:#333
+```
 
 ### 3. 📝 Document Summarization
 - **Jurisdiction-based Summaries**: Concise overviews by jurisdiction
@@ -179,6 +237,32 @@ Once the vector database is populated, the RAG system handles user queries throu
 
 *Conflict detection process showing different types of regulatory conflicts*
 
+```mermaid
+graph TD
+    A[Conflict Detection] --> B[Requirements]
+    A --> C[Definitions]
+    A --> D[Procedures]
+    A --> E[Timelines]
+    
+    B --> F[Threshold Conflicts]
+    B --> G[Scope Conflicts]
+    
+    C --> H[Term Definitions]
+    C --> I[Jurisdiction Variations]
+    
+    D --> J[Documentation]
+    D --> K[Process Flow]
+    
+    E --> L[Reporting Deadlines]
+    E --> M[Implementation Dates]
+    
+    style A fill:#f66,stroke:#333,stroke-width:2px
+    style B fill:#faa,stroke:#333
+    style C fill:#faa,stroke:#333
+    style D fill:#faa,stroke:#333
+    style E fill:#faa,stroke:#333
+```
+
 ### 5. 📈 Regulatory Trend Analysis
 - **Requirement Evolution**: Tracks changes in regulatory requirements
 - **Focus Area Shifts**: Identifies emerging regulatory priorities
@@ -188,6 +272,34 @@ Once the vector database is populated, the RAG system handles user queries throu
 ![Trend Analysis](assets/trend_analysis_workflow.png)
 
 *Trend analysis showing evolution of requirements and emerging patterns*
+
+```mermaid
+graph TD
+    A[Trend Analysis] --> B[Requirements Evolution]
+    A --> C[Focus Areas]
+    A --> D[Stringency]
+    A --> E[Patterns]
+    
+    B --> F[Pre-2015]
+    B --> G[2015-2018]
+    B --> H[Post-2018]
+    
+    C --> I[Digital Assets]
+    C --> J[Beneficial Ownership]
+    C --> K[Risk Assessment]
+    
+    D --> L[CDD Requirements]
+    D --> M[Reporting Rules]
+    
+    E --> N[Risk-Based Approach]
+    E --> O[Technology Integration]
+    
+    style A fill:#6cf,stroke:#333,stroke-width:2px
+    style B fill:#9cf,stroke:#333
+    style C fill:#9cf,stroke:#333
+    style D fill:#9cf,stroke:#333
+    style E fill:#9cf,stroke:#333
+```
 
 ## Technology Stack
 *   **Programming Language:** Python 3.11+
