@@ -321,3 +321,37 @@ The RAG agent can handle complex compliance questions across different jurisdict
 
 **Sample English Queries:**
 ```
+"What are the customer identification program (CIP) requirements under the USA PATRIOT Act?"
+"How do enhanced due diligence measures differ between US and EU regulations?"
+```
+
+**Sample Portuguese Queries:**
+```
+"Quais são os procedimentos de conhecimento do cliente exigidos pelo Banco Central do Brasil?"
+"O que estabelece a Circular 4001 sobre clientes de alto risco?"
+```
+
+## Running the Complete System
+
+### **Start the API Server**
+```bash
+# Activate virtual environment
+source .venv/bin/activate
+
+# Start the FastAPI server
+python3 -m uvicorn backend.api.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### **Access the Interface**
+- **API Documentation**: [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Qdrant Dashboard**: [http://localhost:6333/dashboard](http://localhost:6333/dashboard)
+
+## Future Roadmap
+
+- Integrate multi-agent coordination to enrich responses.
+- Build front-end interface
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
